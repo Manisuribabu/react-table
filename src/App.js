@@ -434,7 +434,7 @@ export default function EnhancedTable() {
           <Fade in={open}>
             {selected &&
               <div className={classes.paper2}>
-                <h2 className={classes.text}>post details</h2>
+                <h2 className={classes.text}>Post Details</h2>
                 <p>Tittle</p>
                 <TextField
                   type="text"
@@ -445,8 +445,8 @@ export default function EnhancedTable() {
                   multiline
                   margin="normal"
                 />
-                <hr></hr>
-                <p>body</p>
+                
+                <p>Body</p>
                 <TextField
                   type="text"
                   value={editBody}
@@ -456,7 +456,7 @@ export default function EnhancedTable() {
                   multiline
                   margin="normal"
                 />
-                <hr></hr>
+                
                 <div className={classes.modalfooter}>
                   <Button
                     variant="contained"
@@ -480,7 +480,7 @@ export default function EnhancedTable() {
       <div className={classes.root}>
         <Snackbar open={alert} autoHideDuration={6000} onClose={handleClose}  >
           <Alert onClose={handleClose} severity="success">
-            Post Update Successfully
+            Post Updated successfully
           </Alert>
         </Snackbar>
       </div>
