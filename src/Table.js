@@ -125,9 +125,9 @@ const [todoDetails,setTodoDetails]=React.useState([]);
     props.onProductData({ ...postData, ...userData });
     navigate("/post");
   }
-  function addTodoDetails(todoData,userData){
+  function addTodoDetails(todoData, userData2){
     debugger
-    props.onTodoData({...todoData, ...userData});
+    props.onTodoData({...todoData, ...userData2});
     navigate("/todo");
   }
 
@@ -257,7 +257,7 @@ const [todoDetails,setTodoDetails]=React.useState([]);
                         // <a href="/products">
                         <TableRow
                           key={row.name}
-                          onClick={() => addTodoDetails(row, users[row.userId - 1])}
+                          onClick={() => addDetails(row, users[row.userId - 1])}
                         >
                           <TableCell align="right">
                             {userdata ? users[row.userId - 1].username : null}

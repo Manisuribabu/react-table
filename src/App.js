@@ -22,21 +22,22 @@ export default function EnhancedTable(props) {
       postdata.push(e);
     }
     setDataDetails(postdata);
-  };
-
-  const handleTodoData = (e) => {
-    debugger
-    if (postdata.length > 0) {
-      let data = postdata.filter((item) => item.id === e.id);
-      if (data.length === 0) {
-        postdata.push(e);
-      }
-      console.log(postdata);
-    } else {
-      postdata.push(e);
-    }
     setTodoDetails(postdata);
   };
+
+  // const handleTodoData = (e) => {
+  //   debugger
+  //   if (postdata.length > 0) {
+  //     let data = postdata.filter((item) => item.id === e.id);
+  //     if (data.length === 0) {
+  //       postdata.push(e);
+  //     }
+  //     console.log(postdata);
+  //   } else {
+  //     postdata.push(e);
+  //   }
+  //   setTodoDetails(postdata);
+  // };
 
   return (
     <>
@@ -45,7 +46,7 @@ export default function EnhancedTable(props) {
           <Route
             path="/"
             element={<Demo 
-              onTodoData={(e)=>handleTodoData}  onProductData={(e) => handlePostData(e)} />}  
+             onProductData={(e) => handlePostData(e)} />}  
           />
 
           <Route
@@ -56,7 +57,7 @@ export default function EnhancedTable(props) {
           <Route
             path="/todo"
             
-            element={<TodoDetails todoDetails={todoDetails} />}
+            element={<TodoDetails todoDetails={dataDetails} />}
           />
         </Routes>
       </Router>
