@@ -23,6 +23,92 @@
   font-size: calc(10px + 2vmin);
   color: white;
 }
+.select-style{
+  display: flex;
+  margin-left: 708px;
+}
+.MuiInputBase-root.MuiInput-root.MuiInput-underline{
+  margin-top: -8px;
+  margin-left: 11px;
+}
+th.MuiTableCell-root.MuiTableCell-head.MuiTableCell-alignRight{
+  text-align: center;
+    
+    width: 0px;
+}
+td.MuiTableCell-root.MuiTableCell-body.MuiTableCell-alignRight{
+  
+    text-align: center;
+    flex-direction: row-reverse;
+}
+.check-div{
+  font-size: 24px;
+}
+
+.title-details{
+  text-align: center;
+  margin-top: 257px;
+
+
+}
+.title-height{
+  height: 132px;
+}
+.title-email{
+  margin-left: 1079px;
+    margin-top: 54px;
+    font-size: 23px;
+}
+.post-title{
+  text-align: center;
+}
+.title-font{
+  font-size: 26px;
+  border: 1px solid #191818;
+    border-radius: 10px;
+    width: 882px;
+    height: 108px;
+    text-align: revert;
+    margin-left: 300px;
+}
+.body-font{
+  font-size: 26px;
+  margin-top: 58px;
+  text-align: center;
+  width: 1030px;
+  margin-left: 286px;
+  border: 1px solid #191818;
+    border-radius: 10px;
+    width: 882px;
+    height: 108px;
+    text-align: revert;
+    margin-left: 300px;
+
+}
+.root {
+  margin: 20,
+}
+/* .paper {
+  width: "100%";
+  marginBottom: theme.spacing(2);
+}
+.input {
+  marginLeft: theme.spacing(2),
+  flex: 1,
+} */
+.iconButton {
+  padding: 5px;
+}
+
+.search {
+  width: 272px;
+  margin-left: 1226px;
+}
+
+
+.table {
+  minWidth: 650Px;
+}
 
 .App-link {
   color: #61dafb;
